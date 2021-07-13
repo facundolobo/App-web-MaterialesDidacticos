@@ -1,116 +1,116 @@
-<!DOCTYPE HTML>
-<!--
-	Road Trip by TEMPLATED
-	templated.co @templatedco
-	Released for free under the Creative Commons Attribution 3.0 license (templated.co/license)
--->
-<html>
-	<head>
-		<title>{{titulo}}</title>
-		<meta charset="utf-8" />
-		<meta name="viewport" content="width=device-width, initial-scale=1" />
-		<link rel="stylesheet" href="assets/css/main.css" />
-	</head>
-	<body>
+<!DOCTYPE html>
+<html lang="en">
 
-		<!-- Header -->
+{{!-- head --}}
+	
+	{{> head}}
+
+  <body>
+
+    <!-- Header -->
 		{{> header}}
 
-		<!-- Nav -->
-		{{> navbar}}
+    <!-- Page Content -->
+    <!-- Banner Starts Here _ NUEVAS IMAGENES Y QUE PEUDE DECIR -->
+	
+    <div class="banner header-text">
+      <div class="owl-banner owl-carousel">
+        <div class="banner-item-01">
+          <div class="text-content">
+            <h4>Titulo 1</h4>
+            <h2>Descripción 1</h2>
+          </div>
+        </div>
+        <div class="banner-item-02">
+          <div class="text-content">
+            <h4>Titulo 2</h4>
+            <h2>Descripción 2</h2>
+          </div>
+        </div>
+        <div class="banner-item-03">
+          <div class="text-content">
+            <h4>Titulo 3</h4>
+            <h2>Descripción 3</h2>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- Banner Ends Here -->
 
-		<!-- Banner -->
-		<!--
-			Note: To show a background image, set the "data-bg" attribute below
-			to the full filename of your image. This is used in each section to set
-			the background image.
-		-->
-			<section id="banner" class="bg-img" data-bg="banner.jpg">
-				<div class="inner">
-					<header>
-						<h1>This is Road Trip</h1>
-					</header>
-				</div>
-				<a href="#one" class="more">Learn More</a>
-			</section>
 
-		<!-- One -->
-			<section id="one" class="wrapper post bg-img" data-bg="banner2.jpg">
-				<div class="inner">
-					<article class="box">
-						<header>
-							<h2>Nibh non lobortis mus nibh</h2>
-							<p>01.01.2017</p>
-						</header>
-						<div class="content">
-							<p>Scelerisque enim mi curae erat ultricies lobortis donec velit in per cum consectetur purus a enim platea vestibulum lacinia et elit ante scelerisque vestibulum. At urna condimentum sed vulputate a duis in senectus ullamcorper lacus cubilia consectetur odio proin sociosqu a parturient nam ac blandit praesent aptent. Eros dignissim mus mauris a natoque ad suspendisse nulla a urna in tincidunt tristique enim arcu litora scelerisque eros suspendisse.</p>
-						</div>
-						<footer>
-							<a href="generic.html" class="button alt">Learn More</a>
-						</footer>
-					</article>
-				</div>
-				<a href="#two" class="more">Learn More</a>
-			</section>
+	{{!-- UltimoProducto --}}
+	{{> ultimoProducto}}
+	
+	<!-- productos -->
+	
+	<div class="latest-products">
+      <div class="container">
+        <div class="row">
+          <div class="col-md-12">
+            <div class="section-heading">
+              <h2>Productos Destacados</h2>
+              <a href="/nuestrosProductos">view all products <i class="fa fa-angle-right"></i></a>
+            </div>
+          </div>
+          
+		  {{!-- cada producto --}}
+		  {{> todosLosProductos}}
+	
 
-		<!-- Two -->
-			<section id="two" class="wrapper post bg-img" data-bg="banner5.jpg">
-				<div class="inner">
-					<article class="box">
-						<header>
-							<h2>Mus elit a ultricies at</h2>
-							<p>12.21.2016</p>
-						</header>
-						<div class="content">
-							<p>Scelerisque enim mi curae erat ultricies lobortis donec velit in per cum consectetur purus a enim platea vestibulum lacinia et elit ante scelerisque vestibulum. At urna condimentum sed vulputate a duis in senectus ullamcorper lacus cubilia consectetur odio proin sociosqu a parturient nam ac blandit praesent aptent. Eros dignissim mus mauris a natoque ad suspendisse nulla a urna in tincidunt tristique enim arcu litora scelerisque eros suspendisse.</p>
-						</div>
-						<footer>
-							<a href="generic.html" class="button alt">Learn More</a>
-						</footer>
-					</article>
-				</div>
-				<a href="#three" class="more">Learn More</a>
-			</section>
+        </div>
+      </div>
+    </div>
 
-		<!-- Three -->
-			<section id="three" class="wrapper post bg-img" data-bg="banner4.jpg">
-				<div class="inner">
-					<article class="box">
-						<header>
-							<h2>Varius a cursus aliquet</h2>
-							<p>11.11.2016</p>
-						</header>
-						<div class="content">
-							<p>Scelerisque enim mi curae erat ultricies lobortis donec velit in per cum consectetur purus a enim platea vestibulum lacinia et elit ante scelerisque vestibulum. At urna condimentum sed vulputate a duis in senectus ullamcorper lacus cubilia consectetur odio proin sociosqu a parturient nam ac blandit praesent aptent. Eros dignissim mus mauris a natoque ad suspendisse nulla a urna in tincidunt tristique enim arcu litora scelerisque eros suspendisse.</p>
-						</div>
-						<footer>
-							<a href="generic.html" class="button alt">Learn More</a>
-						</footer>
-					</article>
-				</div>
-				<a href="#four" class="more">Learn More</a>
-			</section>
 
-		<!-- Four -->
-			<section id="four" class="wrapper post bg-img" data-bg="banner3.jpg">
-				<div class="inner">
-					<article class="box">
-						<header>
-							<h2>Luctus blandit mi lectus in nascetur</h2>
-							<p>10.30.2016</p>
-						</header>
-						<div class="content">
-							<p>Scelerisque enim mi curae erat ultricies lobortis donec velit in per cum consectetur purus a enim platea vestibulum lacinia et elit ante scelerisque vestibulum. At urna condimentum sed vulputate a duis in senectus ullamcorper lacus cubilia consectetur odio proin sociosqu a parturient nam ac blandit praesent aptent. Eros dignissim mus mauris a natoque ad suspendisse nulla a urna in tincidunt tristique enim arcu litora scelerisque eros suspendisse.</p>
-						</div>
-						<footer>
-							<a href="generic.html" class="button alt">Learn More</a>
-						</footer>
-					</article>
-				</div>
-			</section>
+    <div class="call-to-action">
+      <div class="container">
+        <div class="row">
+          <div class="col-md-12">
+            <div class="inner-content">
+              <div class="row">
+                <div class="col-md-8">
+                  <h4>Nombre de la empresa; <em>marca de la emrpesa</em> Tipo de producto de la emrpesa</h4>
+                  <p>Descripcion de la empresa</p>
+                </div>
+                {{!-- <div class="col-md-4">
+                  <a href="#" class="filled-button">Purchase Now</a>
+                </div> --}}
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
 
-		<!-- Footer -->
-		{{> footer}}
+     {{!-- footer --}}
+	 {{> footer}}
 
-	</body>
+
+    <!-- Bootstrap core JavaScript -->
+    <script src="vendor/jquery/jquery.min.js"></script>
+    <script src="vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+
+
+    <!-- Additional Scripts -->
+    <script src="assets/js/custom.js"></script>
+    <script src="assets/js/owl.js"></script>
+    <script src="assets/js/slick.js"></script>
+    <script src="assets/js/isotope.js"></script>
+    <script src="assets/js/accordions.js"></script>
+
+
+    <script language = "text/Javascript"> 
+      cleared[0] = cleared[1] = cleared[2] = 0; //set a cleared flag for each field
+      function clearField(t){                   //declaring the array outside of the
+      if(! cleared[t.id]){                      // function makes it static and global
+          cleared[t.id] = 1;  // you could use true and false, but that's more typing
+          t.value='';         // with more chance of typos
+          t.style.color='#fff';
+          }
+      }
+    </script>
+
+
+  </body>
+
 </html>

@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="en">
+
+{{!-- head --}}
+	
+	{{> head}}
+
+  <body>
+
+    <!-- Header -->
+		{{> header}}
+
+    <!-- Page Content -->
+    <div class="page-heading about-heading header-text">
+      <div class="container">
+        <div class="row">
+          <div class="col-md-12">
+            <div class="text-content">
+              <h4>Acerca de</h4>
+              <h2>Nuestra Compañia</h2>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+
+    <div class="best-features about-features">
+      <div class="container">
+        <div class="row">
+          <div class="col-md-12">
+            <div class="section-heading">
+              <h2>Descripción</h2>
+            </div>
+          </div>
+          <div class="col-md-6">
+            <div class="right-image">
+              <img src="assets/images/feature-image.jpg" alt="">
+            </div>
+          </div>
+          <div class="col-md-6">
+            <div class="left-content">
+              <h4>¿Quienes somos? &amp; ¿Qué hacemos?</h4>
+              <p>Texto largo de que se trata.</p>
+              <ul class="social-icons">
+
+                <li><a href="https://www.facebook.com/marcelofabian.lobo.56" target="_blank"><i class="fa fa-facebook"></i></a></li>
+                <li><a href="#"><i class="fa fa-twitter"></i></a></li>
+                <li><a href="#"><i class="fa fa-linkedin"></i></a></li>
+                
+
+
+              </ul>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    
+    <div class="team-members">
+      <div class="container">
+        <div class="row">
+          <div class="col-md-12">
+            <div class="section-heading">
+              <h2>Our Team Members</h2>
+            </div>
+          </div>
+
+
+          <div class="col-md-4">
+            <div class="team-member">
+              <div class="thumb-container">
+                <img src="assets/images/team_01.jpg" alt="">
+                <div class="hover-effect">
+                  <div class="hover-content">
+                    <ul class="social-icons">
+                      <li><a href="https://www.facebook.com/fabianmarcelo.lobo" target="_blank"><i class="fa fa-facebook"></i></a></li>
+                      <li><a href="#"><i class="fa fa-twitter"></i></a></li>
+                      <li><a href="#"><i class="fa fa-linkedin"></i></a></li>
+                      <li><a href="#"><i class="fa fa-behance"></i></a></li>
+                    </ul>
+                  </div>
+                </div>
+              </div>
+              <div class="down-content">
+                <h4>Fabian Marcelo Lobo</h4>
+                <span>Maestro</span>
+                <p>Agregar descripción</p>
+              </div>
+            </div>
+          </div>
+      </div>
+    </div>
+
+
+
+
+    
+    {{!-- footer --}}
+	 {{> footer}}
+
+
+    <!-- Bootstrap core JavaScript -->
+    <script src="vendor/jquery/jquery.min.js"></script>
+    <script src="vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+
+
+    <!-- Additional Scripts -->
+    <script src="assets/js/custom.js"></script>
+    <script src="assets/js/owl.js"></script>
+    <script src="assets/js/slick.js"></script>
+    <script src="assets/js/isotope.js"></script>
+    <script src="assets/js/accordions.js"></script>
+
+
+    <script language = "text/Javascript"> 
+      cleared[0] = cleared[1] = cleared[2] = 0; //set a cleared flag for each field
+      function clearField(t){                   //declaring the array outside of the
+      if(! cleared[t.id]){                      // function makes it static and global
+          cleared[t.id] = 1;  // you could use true and false, but that's more typing
+          t.value='';         // with more chance of typos
+          t.style.color='#fff';
+          }
+      }
+    </script>
+
+
+  </body>
+
+</html>

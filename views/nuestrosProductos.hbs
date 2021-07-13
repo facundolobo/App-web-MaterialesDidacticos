@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+
+{{!-- head --}}
+	
+	{{> head}}
+
+  <body>
+
+
+
+    <!-- Header -->
+		{{> header}}
+
+    <!-- Page Content -->
+    <div class="page-heading products-heading header-text">
+      <div class="container">
+        <div class="row">
+          <div class="col-md-12">
+            <div class="text-content">
+              <h4>Nuestos Productos</h4>
+              <h2>{{titulo}}</h2>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    
+  <div class="products">
+      <div class="container">
+        <div class="row">
+          <div class="col-md-12">
+            <div class="filters">
+              <ul>
+                  <li class="active" data-filter="*">All Products</li>
+                  <li data-filter=".1er">1er Año</li>
+                  <li data-filter=".2do">2do Año</li>
+                  <li data-filter=".3er">3er Año</li>
+                  <li data-filter=".libretas">Libretas</li>
+              </ul>
+            </div>
+          </div>
+          <div class="col-md-12">
+            <div class="filters-content">
+                <div class="row grid">
+                    
+                  {{!-- cada producto --}}
+		              {{> todosLosProductos}}
+                    
+                </div>
+            </div>
+          </div>
+          {{!-- <div class="col-md-12">
+            <ul class="pages">
+              <li><a href="#">1</a></li>
+              <li class="active"><a href="#">2</a></li>
+              <li><a href="#">3</a></li>
+              <li><a href="#">4</a></li>
+              <li><a href="#"><i class="fa fa-angle-double-right"></i></a></li>
+            </ul>
+          </div> --}}
+        </div>
+      </div>
+    </div>
+
+    
+    {{!-- footer --}}
+	    {{> footer}}
+
+
+    <!-- Bootstrap core JavaScript -->
+    <script src="vendor/jquery/jquery.min.js"></script>
+    <script src="vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+
+
+    <!-- Additional Scripts -->
+    <script src="assets/js/custom.js"></script>
+    <script src="assets/js/owl.js"></script>
+    <script src="assets/js/slick.js"></script>
+    <script src="assets/js/isotope.js"></script>
+    <script src="assets/js/accordions.js"></script>
+
+
+    <script language = "text/Javascript"> 
+      cleared[0] = cleared[1] = cleared[2] = 0; //set a cleared flag for each field
+      function clearField(t){                   //declaring the array outside of the
+      if(! cleared[t.id]){                      // function makes it static and global
+          cleared[t.id] = 1;  // you could use true and false, but that's more typing
+          t.value='';         // with more chance of typos
+          t.style.color='#fff';
+          }
+      }
+    </script>
+
+
+  </body>
+
+</html>

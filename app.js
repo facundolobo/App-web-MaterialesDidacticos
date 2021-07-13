@@ -13,30 +13,48 @@ hbs.registerPartials(__dirname + '/views/partials');
 
 //Servir contenido estático
 app.use(express.static('public')); //cuando ingresa '/' redigira al index.html
+app.use(express.static('public/assets/images/productos')); //cuando ingresa '/' redigira al index.html
+app.use(express.static('public/assets/images/portadas')); //cuando ingresa '/' redigira al index.html
 
+app.get('/', (req, res) => {
+ 
+    res.render('home',
+    {
+        nombre: 'Fabian Lobo',
+        titulo: 'Material Didáctico',
+        
+    }); //lo enviamos al archvo credo en public
+})
 
+app.get('/nuestrosProductos', (req, res) => {
+ 
+    res.render('nuestrosProductos',
+    {
+        nombre: 'Fabian Lobo',
+        titulo: 'Material Didáctico',
+        
+    }); //lo enviamos al archvo credo en public
+})
 
-// app.get('/generic', (req, res) => {
-//     res.render('generic',{
-//         nombre: 'Fernando Herrera',
-//         titulo: 'Curso de Node'
-//     }); //lo enviamos al archvo credo en public
-// })
+app.get('/acercaNosotros', (req, res) => {
+ 
+    res.render('acercaNosotros',
+    {
+        nombre: 'Fabian Lobo',
+        titulo: 'Material Didáctico',
+        
+    }); //lo enviamos al archvo credo en public
+})
 
-// // app.get('/generic', (req, res) => {
-// //     res.sendFile(__dirname+'/public/generic.html'); //lo enviamos al archvo credo en public
-// // })
-
-// app.get('/elements', (req, res) => {
-//     res.render('elements',{
-//         nombre: 'Fernando Herrera',
-//         titulo: 'Curso de Node'
-//     }); //lo enviamos al archvo credo en public
-// })
-
-app.get('*', (req, res) => {
-        res.sendFile(__dirname+'/public/index.html'); //lo enviamos al archvo credo en public
-    })
+app.get('/contacto', (req, res) => {
+ 
+    res.render('contacto',
+    {
+        nombre: 'Fabian Lobo',
+        titulo: 'Material Didáctico',
+        
+    }); //lo enviamos al archvo credo en public
+})
 
 
 

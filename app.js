@@ -6,6 +6,9 @@ const hbs = require('hbs');
 const app = express()
 const port = process.env.PORT;
 
+const titulo2= 'Material Didáctico';
+const titulo ='Catiño' ;
+
 //Handlebars
 app.set('view engine','hbs');
 hbs.registerPartials(__dirname + '/views/partials');
@@ -16,12 +19,12 @@ app.use(express.static('public')); //cuando ingresa '/' redigira al index.html
 app.use(express.static('public/assets/images/productos')); //cuando ingresa '/' redigira al index.html
 app.use(express.static('public/assets/images/portadas')); //cuando ingresa '/' redigira al index.html
 
-app.get('/', (req, res) => {
- 
+app.get('/', (req, res) => {    
+
     res.render('home',
     {
-        nombre: 'Fabian Lobo',
-        titulo: 'Material Didáctico',
+        nombre: titulo,
+        titulo: titulo2,
         
     }); //lo enviamos al archvo credo en public
 })
@@ -30,8 +33,8 @@ app.get('/nuestrosProductos', (req, res) => {
  
     res.render('nuestrosProductos',
     {
-        nombre: 'Fabian Lobo',
-        titulo: 'Material Didáctico',
+        nombre: titulo,
+        titulo: titulo2,
         
     }); //lo enviamos al archvo credo en public
 })
@@ -40,8 +43,8 @@ app.get('/acercaNosotros', (req, res) => {
  
     res.render('acercaNosotros',
     {
-        nombre: 'Fabian Lobo',
-        titulo: 'Material Didáctico',
+        nombre: titulo,
+        titulo: titulo2,
         
     }); //lo enviamos al archvo credo en public
 })
@@ -50,8 +53,8 @@ app.get('/contacto', (req, res) => {
  
     res.render('contacto',
     {
-        nombre: 'Fabian Lobo',
-        titulo: 'Material Didáctico',
+        nombre: titulo,
+        titulo: titulo2,
         
     }); //lo enviamos al archvo credo en public
 })

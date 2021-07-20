@@ -59,6 +59,15 @@ app.get('/contacto', (req, res) => {
     }); //lo enviamos al archvo credo en public
 })
 
+app.get('/puntosDeVenta', (req, res) => {
+ 
+    res.render('puntosDeVenta',
+    {
+        nombre: titulo,
+        titulo: titulo2,
+        
+    }); //lo enviamos al archvo credo en public
+})
 
 
 app.listen(port, () => {

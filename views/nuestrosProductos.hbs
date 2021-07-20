@@ -33,7 +33,9 @@
           <div class="col-md-12">
             <div class="filters">
               <ul>
-                  <li class="active" data-filter="*">Todos</li>
+                  {{!-- <li class="active" data-filter="*">Todos</li> --}}
+                  <li id="divProducto" data-filter="*">Todos</li>
+
                   <li data-filter=".jardin">Jardin</li>
                   <li data-filter=".1er">1erº</li>
                   <li data-filter=".2do">2doº</li>
@@ -42,25 +44,19 @@
               </ul>
             </div>
           </div>
-          <div class="col-md-12">
-            <div class="filters-content">
-                <div class="row grid">
-                    
-                  {{!-- cada producto --}}
-		              {{> todosLosProductos}}
-                    
+          
+
+
+              <div class="col-md-12">
+                <div class="filters-content">
+                    <div class="row grid">
+                        
+                      {{> todosLosProductos}}
+                        
+                    </div>
                 </div>
-            </div>
-          </div>
-          {{!-- <div class="col-md-12">
-            <ul class="pages">
-              <li><a href="#">1</a></li>
-              <li class="active"><a href="#">2</a></li>
-              <li><a href="#">3</a></li>
-              <li><a href="#">4</a></li>
-              <li><a href="#"><i class="fa fa-angle-double-right"></i></a></li>
-            </ul>
-          </div> --}}
+              </div>
+
         </div>
       </div>
     </div>

@@ -255,6 +255,25 @@ header .navbar {
     -o-transition: all .3s ease 0s;
     transition: all .3s ease 0s;
 }
+
+/* nuevo utilizando con h5*/
+.navbar .navbar-brand h5 {
+	color: #fff;
+	text-transform: uppercase;
+	font-size:  3.5vw;
+	font-weight: 700;
+	-webkit-transition: all .3s ease 0s;
+    -moz-transition: all .3s ease 0s;
+    -o-transition: all .3s ease 0s;
+    transition: all .3s ease 0s;
+}
+.navbar .navbar-brand h5 em {
+	font-style: normal;
+	font-size:  3.5vw;
+	color: #f33f3f;
+}
+/* -----*/
+
 .navbar .navbar-brand h2 em {
 	font-style: normal;
 	color: #f33f3f;
